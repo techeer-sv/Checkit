@@ -28,3 +28,16 @@ services:
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
     depends_on:
       - mysql
+
+  controller:
+    container_name: nGrinder_controller
+    image: ngrinder/controller
+    ports:
+      - "9000:80"
+      - "16001:16001"
+      - "12000-12009:12000-12009"
+  agent:
+    container_name: nGrinder_agent
+    image: ngrinder/agent
+    links:
+      - controller
