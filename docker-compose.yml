@@ -31,13 +31,13 @@ services:
 
   controller:
     container_name: nGrinder_controller
-    image: ngrinder/controller
+    image: ngrinder/controller:3.5.5
     ports:
       - "9000:80"
       - "16001:16001"
       - "12000-12009:12000-12009"
   agent:
     container_name: nGrinder_agent
-    image: ngrinder/agent
+    image: ngrinder/agent:3.5.5
     links:
       - controller
