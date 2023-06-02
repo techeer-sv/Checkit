@@ -15,6 +15,8 @@ services:
       - '--collation-server=utf8mb4_unicode_ci'
     ports:
       - "3307:3306"
+    networks:
+      - default_bridge
 
   backend:
     container_name: backend
@@ -28,6 +30,9 @@ services:
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
     depends_on:
       - mysql
+    networks:
+      default_bridge:
+        ipv4_address: 172.16.1.5
 
   controller:
     container_name: nGrinder_controller
@@ -36,8 +41,20 @@ services:
       - "9000:80"
       - "16001:16001"
       - "12000-12009:12000-12009"
+    networks:
+      - default_bridge
   agent:
     container_name: nGrinder_agent
     image: ngrinder/agent:3.5.5
     links:
       - controller
+    networks:
+      - default_bridge
+
+
+networks:
+  default_bridge:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.1.0/24
