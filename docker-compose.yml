@@ -33,23 +33,38 @@ services:
     networks:
       default_bridge:
         ipv4_address: 172.16.1.5
-
-  controller:
-    container_name: nGrinder_controller
-    image: ngrinder/controller:3.5.5
+  nginx:
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    container_name: nginx
     ports:
-      - "9000:80"
-      - "16001:16001"
-      - "12000-12009:12000-12009"
+      - "80:80"
+    restart: always
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - build_folder:/var/www/frontend
+    depends_on:
+      - backend
     networks:
       - default_bridge
-  agent:
-    container_name: nGrinder_agent
-    image: ngrinder/agent:3.5.5
-    links:
-      - controller
-    networks:
-      - default_bridge
+
+#  controller:
+#    container_name: nGrinder_controller
+#    image: ngrinder/controller:3.5.5
+#    ports:
+#      - "9000:80"
+#      - "16001:16001"
+#      - "12000-12009:12000-12009"
+#    networks:
+#      - default_bridge
+#  agent:
+#    container_name: nGrinder_agent
+#    image: ngrinder/agent:3.5.5
+#    links:
+#      - controller
+#    networks:
+#      - default_bridge
 
 
 networks:
@@ -58,3 +73,7 @@ networks:
       driver: default
       config:
         - subnet: 172.16.1.0/24
+
+
+volumes:
+  build_folder:
