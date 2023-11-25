@@ -32,8 +32,6 @@
 
 ## How to run
 
-//////////////////// 실행 방법 ////////////////////
-
 > <b>Docker repository clone </b>
 ```
 git clone --recursive 
