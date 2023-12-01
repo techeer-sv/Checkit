@@ -30,28 +30,6 @@
 
 <br>
 
-## How to run
-
-//////////////////// 실행 방법 ////////////////////
-
-> <b>Docker repository clone </b>
-```
-git clone --recursive 
-```
-
-> <b>Set .env in the backend folder </b>
-```
-?
-```
-
-> <b>Run Docker-compose </b>
-```
-docker-compose up —build
-```
-
-
-<br>
-
 ## **🔍 Features**
 
 - 메인 페이지 + 로그인
