@@ -90,8 +90,8 @@ Frontend와 Backend 통신을 위한 API 문서화는 Swagger를 이용
 
 ## 👥 Our Team
 
-| Name | 박희경 | 송지민 | 김선재 | 정우희 | 권찬영 | 고원준 |
-| ------- | ------- | ------- | ------- | ------- | ------- | ------- |
-| Profile | <img width="100px" alt="박희경" src="https://avatars.githubusercontent.com/u/101381901?v=4"> | <img width="100px" alt="송지민" src="https://avatars.githubusercontent.com/u/84628898?v=4"> | <img width="100px" alt="김선재" src="https://avatars.githubusercontent.com/u/83015089?v=4"> | <img width="100px" alt="정우희" src="https://avatars.githubusercontent.com/u/121246589?v=4"> | <img width="100px" alt="권찬영" src="https://avatars.githubusercontent.com/u/85063965?v=4"> | <img width="100px" alt="고원준" src="https://avatars.githubusercontent.com/u/86594108?v=4"> | 
-| Role | Backend, DevOps | Backend, DevOps | Frontend | Frontend | Backend | Frontend | 
-| gitHub  | [@gmlrude](https://github.com/gmlrude) | [jiminsong490](https://github.com/jiminsong490) | [@sunjae98](https://github.com/sunjae98) | [@Joy0w0](https://github.com/Joy0w0) | [@fnzl54](https://github.com/fnzl54) | [@KoneJ](https://github.com/KoneJ) | 
+| Name | 박희경 | 송지민 | 김선재 | 정우희 | 권찬영 | 고원준 | 이지은 |
+| ------- | ------- | ------- | ------- | ------- | ------- | ------- |------- |
+| Profile | <img width="100px" alt="박희경" src="https://avatars.githubusercontent.com/u/101381901?v=4"> | <img width="100px" alt="송지민" src="https://avatars.githubusercontent.com/u/84628898?v=4"> | <img width="100px" alt="김선재" src="https://avatars.githubusercontent.com/u/83015089?v=4"> | <img width="100px" alt="정우희" src="https://avatars.githubusercontent.com/u/121246589?v=4"> | <img width="100px" alt="권찬영" src="https://avatars.githubusercontent.com/u/85063965?v=4"> | <img width="100px" alt="고원준" src="https://avatars.githubusercontent.com/u/86594108?v=4"> |<img width="100" alt="이지은" src="https://github.com/2023-Winter-Bootcamp-Team-K/.github/assets/67044438/454c81ec-b3fc-4a08-b8a0-8123f1e4cb1c"> |
+| Role | Backend, DevOps | Backend, DevOps | Frontend | Frontend | Backend | Frontend | Frontend | 
+| gitHub  | [@gmlrude](https://github.com/gmlrude) | [jiminsong490](https://github.com/jiminsong490) | [@sunjae98](https://github.com/sunjae98) | [@Joy0w0](https://github.com/Joy0w0) | [@fnzl54](https://github.com/fnzl54) | [@KoneJ](https://github.com/KoneJ) | [@egg-silver](https://github.com/egg-silver) |
